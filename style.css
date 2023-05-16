@@ -1,0 +1,171 @@
+body {
+	cursor: url('images/cursor.cur'), auto;
+	background: url('images/fire-flames.gif');
+	background-color: #00ff00;
+	font-family: 'Comic Sans MS', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	color: red;
+}
+
+/* CREDIT TO https://github.com/botoxparty/XP.css */
+.title-bar {
+	position: absolute;
+	top: 0;
+	width: 70%;
+    max-width: calc(900px - 10px);
+    font-family: "Trebuchet MS";
+    background: linear-gradient(
+        180deg,
+        rgba(9, 151, 255, 1) 0%,
+        rgba(0, 83, 238, 1) 8%,
+        rgba(0, 80, 238, 1) 40%,
+        rgba(0, 102, 255, 1) 88%,
+        rgba(0, 102, 255, 1) 93%,
+        rgba(0, 91, 255, 1) 95%,
+        rgba(0, 61, 215, 1) 96%,
+        rgba(0, 61, 215, 1) 100%
+    );
+    padding: 3px 5px 3px 3px;
+    border-top: 1px solid #0831d9;
+    border-left: 1px solid #0831d9;
+    border-right: 1px solid #001ea0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 7px;
+    font-size: 15px;
+    text-shadow: 1px 1px #0f1089;
+    height: 35px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.title-bar-text {
+    padding-left: 10px;
+}
+
+.container {
+    flex-grow: 1;
+    background-color: #00ff00 !important;
+    padding: 20px;
+    width: 70%;
+    max-width: 900px;
+    box-sizing: border-box;
+	box-shadow: inset -1px -1px #00138c, inset 1px 1px #0831d9, inset -2px -2px #001ea0, inset 2px 2px #166aee,
+        inset -3px -3px #003bda, inset 3px 3px #0855dd;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    -webkit-font-smoothing: antialiased;
+	padding-top: 55px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 5px solid #ff0000;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: blue;
+    text-decoration: underline;
+    margin-right: 10px;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+#banner{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+#about-me p{
+	font-size: 18px;
+}
+
+#links div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 25px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#under-construction{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.guestbook-entry {
+	border: 1px solid #000000;
+	padding: 10px;
+	margin: 10px 0;
+	background-color: #ffffff;
+}
+
+.pagination {
+	display: flex;
+	justify-content: space-between;
+	width: 200px;
+	margin: 20px auto;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background: #007bff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #007bff, #1241bf); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #007bff, #1241bf); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 1px solid #000;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+button:active {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    transform: translate(2px, 2px);
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+
+#badges {
+    display: flex;
+	flex-direction: row;
+	gap: 5px;
+    justify-content: center;
+}
+
+#badges img {
+    width: 88px;
+    height: 31px;
+}
+
+#footer{
+	position: absolute;
+	bottom: 0;
+	width: 70%;
+    max-width: 900px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+}
