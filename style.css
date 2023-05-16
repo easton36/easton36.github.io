@@ -49,6 +49,8 @@ body {
 
 .container {
     flex-grow: 1;
+	display: flex;
+	flex-direction: column;
     background-color: #00ff00 !important;
     padding: 20px;
     width: 70%;
@@ -145,6 +147,11 @@ button:disabled {
     cursor: not-allowed;
 }
 
+#toddvideo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
 #badges {
     display: flex;
@@ -159,10 +166,8 @@ button:disabled {
 }
 
 #footer{
-	position: absolute;
+	margin-top: auto;
 	bottom: 0;
-	width: 70%;
-    max-width: 900px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
