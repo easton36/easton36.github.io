@@ -2,7 +2,7 @@ body {
 	cursor: url('images/cursor.cur'), auto;
 	background: url('images/fire-flames.gif');
 	background-color: #00ff00;
-	font-family: 'Comic Sans MS', sans-serif;
+	font-family: Courier, 'Comic Sans MS', sans-serif;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
