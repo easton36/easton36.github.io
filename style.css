@@ -8,15 +8,46 @@ body {
 	align-items: center;
 	height: 100vh;
 	margin: 0;
+}
+
+.container {
+    flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+    /* background-color: #00ff00 !important; */
+	background: url('images/background.avif');
+	color: #00ccff;
+    width: 70%;
+    max-width: 900px;
+	overflow-x: hidden;
+	overflow-y: auto;
+    box-sizing: border-box;
+	box-shadow: inset -1px -1px #00138c, inset 1px 1px #0831d9, inset -2px -2px #001ea0, inset 2px 2px #166aee,
+        inset -3px -3px #003bda, inset 3px 3px #0855dd;
+    border-radius: 8px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container::-webkit-scrollbar{
+	display: none;
+}
+
+marquee {
+	margin: 10px;
 	color: red;
+	z-index: 10;
+}
+
+.content {
+	padding: 20px;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
 }
 
 /* CREDIT TO https://github.com/botoxparty/XP.css */
 .title-bar {
-	position: absolute;
-	top: 0;
-	width: 70%;
-    max-width: calc(900px - 10px);
+	position: relative;
     font-family: "Trebuchet MS";
     background: linear-gradient(
         180deg,
@@ -29,7 +60,8 @@ body {
         rgba(0, 61, 215, 1) 96%,
         rgba(0, 61, 215, 1) 100%
     );
-    padding: 3px 5px 3px 3px;
+    padding: 10px 0px 10px 3px;
+	color: red;
     border-top: 1px solid #0831d9;
     border-left: 1px solid #0831d9;
     border-right: 1px solid #001ea0;
@@ -47,39 +79,23 @@ body {
     padding-left: 10px;
 }
 
-.container {
-    flex-grow: 1;
-	display: flex;
-	flex-direction: column;
-    background-color: #00ff00 !important;
-    padding: 20px;
-    width: 70%;
-    max-width: 900px;
-    box-sizing: border-box;
-	box-shadow: inset -1px -1px #00138c, inset 1px 1px #0831d9, inset -2px -2px #001ea0, inset 2px 2px #166aee,
-        inset -3px -3px #003bda, inset 3px 3px #0855dd;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    -webkit-font-smoothing: antialiased;
-	padding-top: 55px;
-}
-
-.navbar {
+#navbar {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    border-bottom: 5px solid #ff0000;
+    border-bottom: 5px solid #00ccff;
     margin-bottom: 20px;
+	padding-bottom: 10px;
 }
 
-.navbar a {
-    color: blue;
-    text-decoration: underline;
-    margin-right: 10px;
+#navbar h1{
+	margin: 0;
 }
 
-.navbar a:hover {
-    color: red;
+#navbar div{
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+	flex-wrap: wrap;
 }
 
 #banner{
@@ -89,6 +105,18 @@ body {
 	justify-content: center;
 }
 
+@media only screen and (max-width: 600px) {
+	#banner{
+		display: none;
+	}
+
+	#navbar {
+		flex-direction: column;
+	}
+
+	
+}
+
 #about-me p{
 	font-size: 18px;
 }
@@ -96,11 +124,16 @@ body {
 #links div{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	gap: 25px;
 	font-size: 20px;
 	font-weight: bold;
+}
+
+#links div a{
+	color: #00f7ff;
 }
 
 #under-construction{
@@ -153,11 +186,18 @@ button:disabled {
 	align-items: center;
 }
 
+#toddvideo video{
+	width: 100%;
+	max-width: 500px;
+}
+
 #badges {
     display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	gap: 5px;
     justify-content: center;
+	width: 100%;
 }
 
 #badges img {
